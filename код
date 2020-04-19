@@ -1,16 +1,11 @@
-var_list = []
-quantity = input("Введите количество элементов: ")
-while True:
-    if quantity.isdigit():
-        quantity = int(quantity)
-        break
-    else:
-        quantity = input("Введите количество элементов: ")
-for i in range(quantity):
-    var_list.append(input(f"Введите элемент списка:{i} "))
-print(var_list)
-b = 0
-for i in range(int(len(var_list)/2)):
-    var_list[b], var_list[b + 1] = var_list[b + 1], var_list[b]
-    b += 2
-    print(var_list)
+
+a = "Мышь"
+b = 12
+c = False
+d = (1, 2, 3)
+e = 12.3
+
+var_list = [a, b, c, d, e]
+
+for var in var_list:
+    print(type(var))
